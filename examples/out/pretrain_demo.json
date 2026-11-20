@@ -1,0 +1,38 @@
+{
+  "answer_cut_samples": 0,
+  "corpus": "examples/in/pretrain_demo.jsonl",
+  "dead_ratio": 0.0,
+  "dead_samples": 0,
+  "dead_supervision_tokens": 0,
+  "max_seq_len": 340,
+  "mode": "auto",
+  "problem_count": 2,
+  "problems": [
+    {
+      "index": 2,
+      "kind": "truncated_text",
+      "max_seq_len": 340,
+      "render_head": "- 提供完整的 MiniMind-LLM 结构代码（Dense + MoE），当前主线结构对齐 `Qwen3 / Qwen3-MoE` 生态。 - 提供 Tokenizer 与分词器训练代码，支持 `<tool_call>`、`<tool_response>`、`<think>` 等模板标记。 - 覆盖 Pretrai",
+      "supervised_tokens": 340,
+      "tokens": 641
+    },
+    {
+      "index": 3,
+      "kind": "truncated_text",
+      "max_seq_len": 340,
+      "render_head": "- 发布 `minimind-3` / `minimind-3-moe`：结构、Tokenizer、训练链路、推理接口与默认配置全面更新 - 结构主线对齐 `Qwen3 / Qwen3-MoE` 生态：Dense 约 `64M`，MoE 约 `198M-A64M`，并移除了 shared expert 设计 - 默认训",
+      "supervised_tokens": 340,
+      "tokens": 633
+    }
+  ],
+  "samples": 6,
+  "status": "clean",
+  "supervised_tokens": 1697,
+  "supervision_ratio": 1.0,
+  "token_waste": 586,
+  "tokenizer": "tokenizer.json",
+  "tokens_kept": 1697,
+  "tokens_total": 2283,
+  "truncated_ratio": 0.333333,
+  "truncated_samples": 2
+}

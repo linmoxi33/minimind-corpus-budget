@@ -1,0 +1,54 @@
+{
+  "answer_cut_samples": 2,
+  "corpus": "examples/in/sft_demo.jsonl",
+  "dead_ratio": 0.222222,
+  "dead_samples": 2,
+  "dead_supervision_tokens": 680,
+  "max_seq_len": 340,
+  "mode": "auto",
+  "problem_count": 4,
+  "problems": [
+    {
+      "index": 1,
+      "kind": "dead",
+      "max_seq_len": 340,
+      "render_head": "<|im_start|>system\n你是一个知识丰富的AI，尽力为用户提供准确的信息。你是一个知识丰富的AI，尽力为用户提供准确的信息。你是一个知识丰富的AI，尽力为用户提供准确的信息。你是一个知识丰富的AI，尽力为用户提供准确的信息。你是一个知识丰富的AI，尽力为用户提供准确的信息。你是一个知识丰富的AI，尽力为用",
+      "supervised_tokens": 0,
+      "tokens": 723
+    },
+    {
+      "index": 3,
+      "kind": "dead",
+      "max_seq_len": 340,
+      "render_head": "<|im_start|>system\n你是 minimind，一个小巧但有用的语言模型。\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatu",
+      "supervised_tokens": 0,
+      "tokens": 1216
+    },
+    {
+      "index": 6,
+      "kind": "answer_cut",
+      "max_seq_len": 340,
+      "render_head": "<|im_start|>user\n与此同时，第三方的大模型框架与工具库，如 `transformers` / `trl` / `peft` 等，往往只暴露出高度抽象的接口。只需短短十几行代码，就可以完成“加载模型 + 加载数据集 + 推理 + 强化学习”的全流程训练。这种高效封装固然便利，却也在一定程度上把开发者与底层",
+      "supervised_tokens": 16,
+      "tokens": 356
+    },
+    {
+      "index": 8,
+      "kind": "answer_cut",
+      "max_seq_len": 340,
+      "render_head": "<|im_start|>user\n总结一下 MiniMind 的训练阶段。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n包括预训练、全参 SFT、LoRA、DPO、知识蒸馏与 RL（PPO/GRPO）。包括预训练、全参 SFT、LoRA、DPO、知识蒸馏与 RL",
+      "supervised_tokens": 316,
+      "tokens": 1478
+    }
+  ],
+  "samples": 9,
+  "status": "loss",
+  "supervised_tokens": 533,
+  "supervision_ratio": 0.282459,
+  "token_waste": 2413,
+  "tokenizer": "tokenizer.json",
+  "tokens_kept": 1887,
+  "tokens_total": 4300,
+  "truncated_ratio": 0.444444,
+  "truncated_samples": 4
+}

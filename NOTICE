@@ -1,0 +1,11 @@
+minimind-corpus-budget
+Copyright (c) 2026 linmoxi33
+
+This product bundles `corpusbudget/tokenizer.json`, copied verbatim from
+jingyaogong/minimind (https://github.com/jingyaogong/minimind),
+file `model/tokenizer.json`, which is licensed under the Apache License 2.0.
+See LICENSE-minimind.
+
+The label-mask algorithm in corpusbudget/probe.py is a dependency-free port of
+`SFTDataset.generate_labels` from the same repository
+(dataset/lm_dataset.py, Apache-2.0), kept line-for-line on purpose.
